@@ -3,13 +3,11 @@ import random
 
 # Initialize pygame
 pygame.init()
-pygame.display.set_caption("Alien Aim Trainer")
 
 # Set up the game window
 window_width = 800
 window_height = 600
 window = pygame.display.set_mode((window_width, window_height))
-pygame.display.set_caption("Aim Trainer")
 
 # Load the alien and crosshair images
 alien_imgs = [pygame.image.load("./assets/alien1.png").convert_alpha(),
@@ -58,7 +56,7 @@ pygame.mouse.set_cursor(*pygame.cursors.broken_x)
 # Set up the text font and size
 font = pygame.font.SysFont(None, 50)
 title_font = pygame.font.SysFont(None, 36)
-game_title = font.render("Alien Aim Trainer", True, (255, 255, 255))
+game_title = font.render("Aim Trainer: Alien Invasion", True, (255, 255, 255))
 click_to_play = title_font.render("Click to Play", True, (255, 255, 255))
 title_rect = game_title.get_rect(center=(window_width/2, window_height/2))
 click_rect = click_to_play.get_rect(center=(window_width/2, title_rect.bottom + 20))
