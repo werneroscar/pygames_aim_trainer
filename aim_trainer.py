@@ -65,7 +65,7 @@ click_rect = click_to_play.get_rect(center=(window_width/2, title_rect.bottom + 
 rules = [
     "Rules:",
     "1. Miss 5 aliens, Game Over",
-    "2. DIfficulty increases every 5 kills."
+    "2. Difficulty increases every 5 kills."
 ]
 rules_texts = [title_font.render(rule, True, (255, 255, 255)) for rule in rules]
 rules_rects = [text.get_rect(center=(window_width/2, click_rect.bottom + 20 + i*30)) for i, text in enumerate(rules_texts)]
