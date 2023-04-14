@@ -138,7 +138,7 @@ while running:
 
     # Increase alien speed and spawn rate as time goes on
     if kills > 0 and kills % 5 == 0:
-        alien_speed = min(alien_speed + 0.2, 5)
+        alien_speed = min(alien_speed + 0.2, 70)
         alien_spawn_time = max(alien_spawn_time - 50, 500)
 
     # End the game if the player misses 5 kills in a row
